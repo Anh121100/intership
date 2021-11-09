@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHOP_CART</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./assets/fonts/fontawesome-free/fontawesome-free-5.15.4-web/css/all.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <div id="main">
+      <!-- begin: header -->
+      <header id="header">
+        <div class="grid grid-row">
+          <div class="phone-number phone-number--separater">
+            <div class="phone-number__icon">
+              <i class="fas fa-headphones-alt"></i>
+            </div>
+            <div class="phone-number__shop">+1 916-85-2235</div>
+          </div>
+          <div class="social-media social-media--separater">
+            <a href="#" class="social-media__link-icon"
+              ><i class="social-media__icon fab fa-twitter"></i
+            ></a>
+            <a href="#" class="social-media__link-icon"
+              ><i class="social-media__icon fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="social-media__link-icon"
+              ><i class="social-media__icon fab fa-linkedin-in"></i
+            ></a>
+            <a href="#" class="social-media__link-icon"
+              ><i class="social-media__icon fab fa-google-plus-g"></i
+            ></a>
+            <a href="#" class="social-media__link-icon"
+              ><i class="social-media__icon fab fa-instagram"></i
+            ></a>
+            <a href="#" class="social-media__link-icon"
+              ><i class="social-media__icon fab fa-youtube"></i
+            ></a>
+            <a href="#" class="social-media__link-icon"
+              ><i class="social-media__icon fab fa-pinterest-p"></i
+            ></a>
+          </div>
+          <ul class="header__navbar-links">
+            <li class="header__navbar-item">
+              <a href="#" class="header-item-link"
+                ><i class="header__navbar-icon fas fa-chevron-right"></i>
+                <span>My Account</span></a
+              >
+            </li>
+            <li class="header__navbar-item">
+              <a href="#" class="header-item-link"
+                ><i class="header__navbar-icon fas fa-chevron-right"></i>
+                <span>FAQ</span></a
+              >
+            </li>
+            <li class="header__navbar-item">
+              <a href="#" class="header-item-link"
+                ><i class="header__navbar-icon fas fa-chevron-right"></i>
+                <span>Contact Us</span></a
+              >
+            </li>
+            <li class="header__navbar-item">
+              <a href="#" class="header-item-link"
+                ><i class="header__navbar-icon fas fa-chevron-right"></i>
+                <span>Newsletter Singup</span></a
+              >
+            </li>
+            <li class="header__navbar-item">
+              <a href="#" class="header-item-link"
+                ><i class="header__navbar-icon fas fa-chevron-right"></i>
+                <span>Shipping Terms</span></a
+              >
+            </li>
+          </ul>
+          <div class="header__button">
+            <button class="header__button-Mywishlist">My wishlist</button>
+          </div>
+        </div>
+      </header>
+      <!-- begin: Navigation -->
+      <nav id="navbar">
+        <div class="grid grid-center">
+          <div class="logo">
+            <img src="./assets/image/logo.svg" alt="logo" class="logo-img" />
+            <a href="#" class="logo__title-link"
+              ><h2 class="logo__title-text">thegem</h2></a
+            >
+          </div>
+          <div class="navbar-links">
+            <div class="navbar-links--text">
+              <a href="#" class="navbar-link">Home</a>
+              <a href="#" class="navbar-link">Pages</a>
+              <a href="#" class="navbar-link">Blog</a>
+              <a href="#" class="navbar-link">Portfolios</a>
+              <a href="#" class="navbar-link navbar-link--border">Shop</a>
+              <a href="#" class="navbar-link">Features</a>
+              <a href="#" class="navbar-link">elements</a>
+            </div>
+            <div class="navbar-links--icon">
+              <a href="#" class="languare-pages">
+                <img
+                  src="./assets/image/ensign.svg"
+                  alt="languare"
+                  class="languare-pages__img"
+                />
+              </a>
+              <a href="#" class="navbar__search"
+                ><i class="navbar__search-icon fas fa-search"></i
+              ></a>
+              <a href="#" class="navbar__bag">
+                <img
+                  src="./assets//image/bag.svg"
+                  alt=""
+                  class="navbar__bag-img"
+                />
+              </a>
+              <div class="navbar__arrow">2</div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- begin: Breadcrumb -->
+      <div id="breadcrumb">
+        <div class="grid grid-breadcrumb">
+          <div class="breadcrumb-title">
+            <div class="title-main"><strong>Woo</strong> cart</div>
+            <div class="breadcrumb-list">
+              <ul class="breadcrumb-items">
+                <li class="breadcrumb-item">
+                  <a href="#" class="breadcrumb-link">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="#" class="breadcrumb-link">Breadcrumbs Example</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="#" class="breadcrumb-link">Second Level</a>
+                </li>
+                <li class="breadcrumb-item">Third Level</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="breadcrumb-cart">
+            <a href="#" class="breadcrumb-cart__link"
+              ><i class="breadcrumb-cart__link-icon fas fa-shopping-cart"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <!-- begin: Content -->
+      <div id="content">
+        <!-- Cart -->
+        <div class="cart">
+          <div class="grid">
+            <h4 class="cart-title">
+              You Have <span>6 Items</span> In Your Cart
+            </h4>
+            <div class="cart-feature">
+              <table class="table-cart">
+                <thead>
+                  <tr>
+                    <th colspan="3" class="first">Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="item-cart">
+                    <td>
+                      <div class="alert-close"></div>
+                    </td>
+                    <td>
+                      <img
+                        class="cart-img"
+                        src="./assets/image/cart-img.png"
+                        alt=""
+                      />
+                    </td>
+                    <td>
+                      <div class="product-info">
+                        <a href="#" class="product-info__title"
+                          >Lorem ipsum dolor sit amet</a
+                        >
+                        <span class="product-info__details">
+                          Size: Large, Color: Black
+                        </span>
+                      </div>
+                    </td>
+                    <td class="product-price">$35.99</td>
+                    <td>
+                      <div class="quantity-cart">
+                        <span class="quantity-minus">&#8722</span>
+                        <span class="quantity ">1</span>
+                        <span class="quantity-plus ">&#43</span>
+            
+                      </div>
+                    </td>
+                    <td class="product-total">$35.99</td>
+                  </tr>
+                  <tr class="item-cart">
+                    <td>
+                      <div class="alert-close"></div>
+                    </td>
+                    <td>
+                      <img
+                        class="cart-img"
+                        src="./assets/image/cart-img.png"
+                        alt=""
+                      />
+                    </td>
+                    <td>
+                      <div class="product-info">
+                        <a href="#" class="product-info__title"
+                          >Consectetur adipisicing</a
+                        >
+                      </div>
+                    </td>
+                    <td class="product-price">$1285.99</td>
+                    <td>
+                      <div class="quantity-cart">
+                        <span class="quantity-minus">&#8722</span>
+                        <span class="quantity ">1</span>
+                        <span class="quantity-plus ">&#43</span>
+            
+                      </div>
+                    </td>
+                    <td class="product-total">$1285.99</td>
+                  </tr>
+                  <tr class="item-cart">
+                    <td>
+                      <div class="alert-close"></div>
+                    </td>
+                    <td>
+                      <img
+                        class="cart-img"
+                        src="./assets/image/cart-img.png"
+                        alt=""
+                      />
+                    </td>
+                    <td>
+                      <div class="product-info">
+                        <a href="#" class="product-info__title"
+                          >Elit sed do eiusmod</a
+                        >
+                        <span class="product-info__details">
+                          Size: Large
+                        </span>
+                      </div>
+                    </td>
+                    <td class="product-price">$89.99</td>
+                    <td>
+                      <div class="quantity-cart">
+                        <span class="quantity-minus">&#8722</span>
+                        <span class="quantity ">1</span>
+                        <span class="quantity-plus ">&#43</span>
+            
+                      </div>
+                    </td>
+                    <td class="product-total">$89.99</td>
+                  </tr>
+                  <tr class="item-cart">
+                    <td>
+                      <div class="alert-close"></div>
+                    </td>
+                    <td>
+                      <img
+                        class="cart-img"
+                        src="./assets/image/cart-img.png"
+                        alt=""
+                      />
+                    </td>
+                    <td>
+                      <div class="product-info">
+                        <a href="#" class="product-info__title"
+                          >Tempor incididunt ut labore</a
+                        >
+                      </div>
+                    </td>
+                    <td class="product-price">$12.00</td>
+                    <td>
+                      <div class="quantity-cart">
+                        <span class="quantity-minus">&#8722</span>
+                        <span class="quantity ">1</span>
+                        <span class="quantity-plus ">&#43</span>
+            
+                      </div>
+                    </td>
+                    <td class="product-total">$12.00</td>
+                  </tr>
+                  <tr class="item-cart">
+                    <td>
+                      <div class="alert-close"></div>
+                    </td>
+                    <td>
+                      <img
+                        class="cart-img"
+                        src="./assets/image/cart-img.png"
+                        alt=""
+                      />
+                    </td>
+                    <td>
+                      <div class="product-info">
+                        <a href="#" class="product-info__title"
+                          >Et dolore aliqua</a
+                        >
+                      </div>
+                    </td>
+                    <td class="product-price">$158.25</td>
+                    <td>
+                      <div class="quantity-cart">
+                        <span class="quantity-minus">&#8722</span>
+                        <span class="quantity ">1</span>
+                        <span class="quantity-plus ">&#43</span>
+            
+                      </div>
+                    </td>
+                    <td class="product-total">$158.99</td>
+                  </tr>
+                  
+                  
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan="6" >
+                      <div class="apply-code"> 
+                        <input
+                        class="input-code"
+                        type="text"
+                        placeholder="Enter Coupon Code Here.."
+                        />
+                        <button class="btn-submit" type="submit">Apply</button>
+                      </div>
+                        <div class="btn-update-check">
+                          <button class="update-cart" type="submit">Update cart</button>
+                        <button class="checkoutrow" type="submit"><i class=" checkoutrow-icon far fa-check-circle"></i>Checkout</button>
+                      </div>
+                     
+                    </td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+        </div>
+        <!-- bill -->
+        <div class="bill">
+          <div class="grid grid-bill">
+            <div class="transport-info">
+              <h3 class="transport-title">calculate shipping</h3>
+              <div class="transport-address">
+                <select name="" id="select-custom" >
+                  <option >Select Your Country</option>
+                </select>
+                <input class="input-county" type="text" placeholder="State/County">
+                <input class="input-postcode" type="text" placeholder="Postcode/Zip">
+                <button class="btn-update-total">Update dotals</button>
+              </div>
+            </div>
+            <div class="transpost-total">
+              <h3 class="transport-title">Cart totals</h3>
+              <table class="cart-total">
+                <tr class="cart-row">
+                  <td class="cart-total-title cart-column">Subtotal</td>
+                  <td class="cart-total-price cart-column">$1285.99</td>
+                </tr>
+                <tr class="cart-row">
+                  <td class="cart-total-title cart-column">Shipping And Handing</td>
+                  <td class="cart-total-select cart-column">
+                    <div class="select-item">
+                      <input type="radio" class="radio" name="radio">
+                      <label for="" class="radio-lable">Flat Rate: $3.99</label>
+                    </div>
+                    <div class="select-item">
+                      <input type="radio" class="radio" name="radio">
+                      <label for="" class="radio-lable">Free Shipping</label>
+                    </div>
+                    <div class="select-item">
+                      <input type="radio" class="radio" name="radio">
+                      <label for="" class="radio-lable">Flat Rate: $12.99</label>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="cart-row">
+                  <td class="cart-total-title cart-column">Total</td>
+                  <td class="cart-total-all cart-column">$2015.00</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <!-- product -->
+        <div class="product">
+          <div class="grid">
+            <h3 class="product-title">you may be interested in</h3>
+            <div class="product-list">
+              <div class="product-item">
+                <img src="./assets/image/cart-img.png" alt="" class="product-item-img">
+                <div class="product-item-info">
+                  <p class="product-name">Demin classy shorts</p>
+                  <p class="product-price"> $35.00-$89.99</p>
+                </div>
+              </div>
+              <div class="product-item">
+                  <img src="./assets/image/cart-img.png" alt="" class="product-item-img">
+                  <div class="product-new">
+                    <span class="product-new-text">NEW</span>
+                  </div>
+                  <div class="product-sale">
+                    <span class="product-sale-text">Sale!</span>
+                  </div>
+                
+                <div class="product-item-info">
+                  <p class="product-name">Demin classy shorts</p>
+                  <p class="product-price"> $35.00-$89.99</p>
+                </div>
+                
+              </div>
+              <div class="product-item">
+                <img src="./assets/image/cart-img.png" alt="" class="product-item-img">
+                <div class="product-item-info">
+                  <p class="product-name">Demin classy shorts</p>
+                  <p class="product-price"> $35.00-$89.99</p>
+                </div>
+              </div>
+              <div class="product-item">
+                <img src="./assets/image/cart-img.png" alt="" class="product-item-img">
+                <div class="product-item-info">
+                  <p class="product-name">Demin classy shorts</p>
+                  <p class="product-price"> $35.00-$89.99</p>
+                </div>
+              </div>
+              <div class="product-item">
+                <img src="./assets/image/cart-img.png" alt="" class="product-item-img">
+                <div class="product-item-info">
+                  <p class="product-name">Demin classy shorts</p>
+                  <p class="product-price"> $35.00-$89.99</p>
+                </div>
+              </div>
+              <div class="product-item">
+                <img src="./assets/image/cart-img.png" alt="" class="product-item-img">
+                <div class="product-item-info">
+                  <p class="product-name">Demin classy shorts</p>
+                  <p class="product-price"> $35.00-$89.99</p>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+        <!--feedback Infomation -->
+        <div class="feedback-info">
+          <div class="grid grid-feedback">
+            <div class="feedback-introduce info-item-width">
+              <div class="feedback-title">
+                <img src="./assets/image/logo-footer.jpg" alt="" class="feedback-logo">
+                <div class="feedback-title-text">The <span class="title-style">gem</span></div>
+              </div>
+              <p class="feedback-subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere iure minus similique minima soluta ipsum possimus omnis ipsam deserunt iusto culpa, esse laborum ad debitis quasi commodi enim quam quis!</p>
+            </div>
+            <div class="recent-posts info-item-width">
+              <h3 class="post-title text-style">Recent posts</h3>
+              <div class="recent-post-item">
+                <img src="./assets/image/cart-img.png" alt="" class="item-img">
+                <div class="recent-post-content">
+                  <h4 class="post-title">Proin gravida nibh vel velit auctor aliquet aenean...</h4>
+                  
+                  <div class="post-chat">
+                    <p class="recent-post-time">27 Dec 2015</p>
+                    <i class="post-chat-icon fas fa-comments">
+                      <span class="post-chat-number">0</span></i>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="recent-post-item ">
+                <img src="./assets/image/cart-img.png" alt="" class="item-img">
+                <div class="recent-post-content">
+                  <h4 class="post-title">Proin gravida nibh vel velit auctor aliquet aenean...</h4>
+                  
+                  <div class="post-chat">
+                    <p class="recent-post-time">27 Dec 2015</p>
+                    <i class="post-chat-icon fas fa-comments">
+                      <span class="post-chat-number">0</span></i>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="recent-post-item">
+                <img src="./assets/image/cart-img.png" alt="" class="item-img">
+                <div class="recent-post-content">
+                  <h4 class="post-title">Proin gravida nibh vel velit auctor aliquet aenean...</h4>
+                  
+                  <div class="post-chat">
+                    <p class="recent-post-time">27 Dec 2015</p>
+                    <i class="post-chat-icon fas fa-comments">
+                      <span class="post-chat-number">0</span></i>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="email info-item-width">
+              <h4 class="email-title text-style">Email</h4>
+              <input type="text" class="email-name email-style email-focus" placeholder="Your name">
+              <input type="email" class="email-address email-style email-focus" placeholder="your@mail.address">
+              <input type="text" class="email-message email-style email-focsu" placeholder="your message">
+              <button class="send-message email-style">Send message</button>
+            </div>
+
+            <div class="flickr-feed info-item-width">
+              <h4 class="flickr-feed-title text-style">Flickr feed</h4>
+              <div class="list-img">
+                <div class="list-img-row">
+                  <img src="./assets/image/cart-img.png" alt="" class="img-wrap">
+                  <img src="./assets/image/cart-img.png" alt="" class="img-wrap">
+                  <img src="./assets/image/cart-img.png" alt="" class="img-wrap">
+                </div>
+                <div class="list-img-row">
+                  <img src="./assets/image/cart-img.png" alt="" class="img-wrap">
+                  <img src="./assets/image/cart-img.png" alt="" class="img-wrap">
+                  <img src="./assets/image/cart-img.png" alt="" class="img-wrap">
+                </div>
+                <div class="list-img-row">
+                  <img src="./assets/image/cart-img.png" alt="" class="img-wrap">
+                  <img src="./assets/image/cart-img.png" alt="" class="img-wrap">
+                  <img src="./assets/image/cart-img.png" alt="" class="img-wrap">
+                </div>
+              </div>
+            </div>
+
+            <div class="contact info-item-width">
+              <h4 class="text-style">contact</h4>
+              <div class="contact-address">
+                <i class="address-icon fas fa-map-marker-alt"><span>Address:</span></i>
+                <p >908 New Hampshire Avenue Northwest</p>
+                <p >#100, Washington, DC</p>
+                <p >20037, United</p>
+              </div>
+              <div class="contact-info">
+                <div class="contact-info-item">
+                  <i class="contact-info-item-icon fas fa-headphones-alt"></i>
+                  <span class="contact-info-detail">Phone: +1 916-857-2235</span>
+                </div>
+                <div class="contact-info-item">
+                  <i class="fas fa-fax"></i>
+                  <span class="contact-info-detail">Fax: +1 916-875-2235</span>
+                </div>
+                <div class="contact-info-item">
+                  <i class="far fa-envelope"></i>
+                  <span class="contact-info-detail">Email: <a class="contact-info-link" href="#">info@domain.ltd</a></span>
+                </div>
+                <div class="contact-info-item">
+                  <i class="fas fa-globe"></i>
+                  <span class="contact-info-detail"><a class="contact-info-link" href="#">www.codex-themes.com</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="useful-links info-item-width">
+              <h4 class="text-style">Useful links</h4>
+              <ul class="useful-links-list">
+                <li class="useful-link-item"><a class="useful-link" href="#">General Information For Users</a></li>
+                <li class="useful-link-item"><a class="useful-link" href="#">Interactive Fairy Tales</a></li>
+                <li class="useful-link-item"><a class="useful-link" href="#">Official Storybook Maker Website</a></li>
+                <li class="useful-link-item"><a class="useful-link" href="#">Every Mathematics Links</a></li>
+                <li class="useful-link-item"><a class="useful-link" href="#">Basic Knowledge and Experience</a></li>
+              </ul>
+            </div>
+
+            <div class="project-client info-item-width">
+              <h4 class="text-style">Projects / Clients?</h4>
+              <div class="slideshow-container">
+                <div class="list-img list-img-width">
+                  <div class="list-img-row">
+                    <img src="./assets/image/cart-img.png" alt="" class="img-wrap">
+                    <img src="./assets/image/cart-img.png" alt="" class="img-wrap">
+                    <img src="./assets/image/cart-img.png" alt="" class="img-wrap">
+                  </div>
+                  <div class="list-img-row">
+                    <img src="./assets/image/cart-img.png" alt="" class="img-wrap">
+                    <img src="./assets/image/cart-img.png" alt="" class="img-wrap">
+                    <img src="./assets/image/cart-img.png" alt="" class="img-wrap">
+                  </div>
+                </div>
+                
+                <div class="slideshow-click">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+              </div>
+            </div>
+
+            <div class="newsletter info-item-width">
+              <h4 class="text-style">Newslerrer</h4>
+              <div class="newsletter-content">
+                <p class="newsletter-subtitle">Subcribe to our MailChimp newsletter and stay up to date with all events coming straight in your mailbox:</p>
+                <div class="submit-email">
+                  <input type="email" class="submit-email-address" placeholder="your email address">
+                  <button class="btn-submit-email"> <i class="fas fa-chevron-right"></i></button>
+                </div>
+                <p class="newsletter-note"><span>&#42</span>
+                  Personal information will be encrypted</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- begin: footer -->
+      <footer id="footer">
+        <div class="grid grid-footer">
+          <div class="footer-info">&#169 Copyright 2015 <span>CodexThemes</span></div>
+          <div class="footer-nav">
+            <a href="#" class="nav-item">Support</a>
+            <a href="#" class="nav-item">Contact</a>
+            <a href="#" class="nav-item">Disclaimer</a>
+            <a href="#" class="nav-item">Privacy Policy</a>
+          </div>
+          <div class="social-media">
+            <a href="#" class="social-media__link-icon"
+              ><i class="social-media__icon twitter-icon-color fab fa-twitter"></i
+            ></a>
+            <a href="#" class="social-media__link-icon"
+              ><i class="social-media__icon facebook-icon-color fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="social-media__link-icon"
+              ><i class="social-media__icon linkedin-icon-color fab fa-linkedin-in"></i
+            ></a>
+            <a href="#" class="social-media__link-icon"
+              ><i class="social-media__icon google-icon-color fab fa-google-plus-g"></i
+            ></a>
+            <a href="#" class="social-media__link-icon"
+              ><i class="social-media__icon instagram-icon-color fab fa-instagram"></i
+            ></a>
+            <a href="#" class="social-media__link-icon"
+              ><i class="social-media__icon youtube-icon-color fab fa-youtube"></i
+            ></a>
+            <a href="#" class="social-media__link-icon"
+              ><i class="social-media__icon pinterest-icon-color fab fa-pinterest-p"></i
+            ></a>
+          </div>
+        </div>
+
+      </footer>
+    </div>
+  </body>
+</html>
