@@ -1,0 +1,39 @@
+:root {
+  --primary-color: #5f727f;
+  --blue-color: #00bcd4;
+  --text-color: #99a9b5;
+  --title-color: #3c3950;
+  --header-background: #f4f6f7;
+  --btn-header: #494c64;
+  --white-color: #ffffff;
+  --grey-border: #dfe5e8;
+  --red-color: #ff5252;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.grid {
+  width: 1170px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
